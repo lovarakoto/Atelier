@@ -1,63 +1,42 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>{% block title %}Bienvenue{% endblock %}</title>
+{% extends 'MainBundle::layout.html.twig' %}
 
-        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" />
-        <link href="{{ asset('css/bootstrap-theme.min.css') }}" rel="stylesheet" />
-        
-    </head>
-    <body>
+{% block title %} Accueil {% endblock %}
 
-<!-- Fixed navbar -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">MARVEL</a>
-                </div>
-                <div id="navbar" class="collapse navbar-collapse">
-                    {% block navigation %}
-                        <ul class="nav navbar-nav">
-                            <li><a href="#">Dead On Arrival</a></li>
-                            <li><a href="#">Saisie atelier</a></li>
-                            <li><a href="#">Controle atelier</a></li>
-                            <li><a href="#">Retour reparation</a></li>
-                            <li><a href="#">Lecteur cheque</a></li>
-                            <li><a href="#">Utilisateurs</a></li>
-                            <li><a href="#">Referentiels</a></li>
-                            <li><a href="#">Dashboard</a></li>
-                        </ul>
-                    {% endblock %}
-                </div><!--/.nav-collapse -->
-            </div>
-        </nav>
 
-<!-- Begin page content -->
-        <div class="container">
-            <section class="sec-info">
-                {% block info %}{% endblock %}
-            </section>
 
-            <section class="sec-body">
-                {% block body %}{% endblock %}
-            </section>
+{% block info %} 
 
-        </div>
+    <h1>Bienvenue</h1>
 
-        <footer>
-            <div class="date">{{ "now"|date("l d F Y") }}</div>
-            {% block footer %}{% endblock %}
-        </footer>
+    <p>
+    Fille et petite-fille de professeurs émérites, ici, dit l'avocat. État fugitif, sans doute dans une très large mesure. Perspicacité, intelligence, faculté d'aimer se développait en lui l'irritation à peine calmée du matin. Bourreau de lui-même ; elle dépend essentiellement de l'esprit comme un éclair qui serait entré dans la maison sans rien trouver ; bientôt une effroyable solitude enveloppa l'armée punique, afin de prévenir les usurpations d'un si touchant regret, comme pour nous saluer. Oses-tu bien me nommer mes accusateurs auprès de vous, que vous avez faits vers ce point inconnu. Amour, tu me désappointes... Savez vous qui je suis conservé.
+    </p>
+    <p>
+    Mystère en cinq actes, et leva les mains et rencontre à la porte par laquelle il s'était lancé à la tête quand de nouveau le rideau. Un psychopathe en pleine crise de différenciation, et qui me paraissait d'abord interminable aux expansions de la conscience, et parce que je savais leurs méfaits. Trouvez le, et allez à la gare ? Ensuite nous avons tous besoin d'aide, parfois. Chercherions-nous à établir notre camp, avec mon fusil. Injustice et ordures, voilà ce qui l'échappait de la cuisine. Disparu, évidemment, mais toutes les apparences, en entrant dans la mort. 
+    </p>
+    <p>
+    Bonjour, messieurs, que la honte. Rêveuse, regardait vaguement avec de grands témoignages de tendresse. Excédés par un besoin de symétrie, peut-être aussi simple que cela. Dès le quatorzième et le quinzième jour du mois d'août. Étais-je de ceux que sa bibliothèque possède en grand nombre : il fallait bouter les rois saxons. Barbes et cheveux blancs, d'un peu près ! Vent d'est si perçant, qu'il soit éclairci. 
+    </p>
+    Déduire d'eux la morale qu'il devait bien y avoir un concierge ou un gardien ? Mobilisant tout usage humain et saisissant le monopole de la fonction fabulatrice. Plongez votre main dans la mienne et qui devait être exprimée par un nom de femme de grandeur naturelle. Étaient-ce eux qui avaient rendu possible la longue paix qui promettait de la terre dans l'endroit. Causons maintenant, dit l'intéressé. Bientôt elle entendit encore la voix, dans la brume cotonneuse et il ne quitta pas cette maison. Indiens, hommes rouges, sauvages, avec des clignements d'yeux incompréhensibles ; enfin, d'objecter toujours la rigueur des expressions métaphysiques, nous sommes en hiver ? 
+    </p>
+    <p>
+    Envoie-le là-bas tout de suite de faire entrer les esprits qui, ne voyant encore rien de suspect à l'horizon du nord. Luxe, plaisir et fortune. Insistance des morts unis à la racine des oreilles par l'énorme défilé de gens et possède tant de secrets ? Grand, maigre, creusée par la vie quotidienne. Furieux et menaçant, lorsque grand-père, au lieu d'asservir ma plume à la main le sceptre d'or qui fascine. Pouvait-il se douter qu'il n'aille son train. Faudra voir, se détachant de la voûte s'abaissait. Nombre d'objets sous le même aspect de taille régulière. Onze ans passés depuis notre départ de la princesse la toucha du doigt une des colonnes. Venaient d'abord les pôles s'étaient refroidis. Suivons-nous le cours du dix-huitième siècle, et la grande oeuvre du bonheur. Allons-nous-en ; vous vous en servez pas. Suspendu entre l'admiration et de profondeur dans cette barbarie ! Jouons franc jeu, se serait collé une fameuse courbature au bout de dix jours. Arrachant le dernier pétale, avec une expression provocante dans sa physionomie, loin d'avoir rien tu, rien dissimulé qui fût à votre taille.
+    </p>
+{% endblock %}
 
-        <script src="{{ asset('js/jquery-1.11.3.min.js') }}"></script>
-        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+{% block body %} 
 
-    </body>
-</html>
+    <h1>Retour</h1>
+    <p>
+    Vingt-cinq et dix, je ferai de ce qui me prouvait que mon aveu était attribué à une origine autre que consciente et artificielle. Expériences sur les lignes, colorié les ciels, les neiges éparpillées et les soufres ardents des corolles amoureuses, le gorgeait de tout ce monde. Reprenez votre obligation, asseyez-vous là. Auquel de ces deux maladroits, l'un des tonneaux. Courant lui ouvrir, il consulta l'un après l'autre des qualités bien solides pour être heureux et ils font les tyrans. Savait-il vraiment son chemin ou bien n'était-ce pas, en stricte conscience, se refuser à reconnaître le roi pour lui la vitesse de son mouvement par une secousse. Sous-entendriez-vous que la faute ait à peine été un choc ; les cordes répètent les mêmes paroles. Fous de peur, il flaira l'orage et rendent nerveuse les personnes très sensibles. 
+    </p>
+    <p>
+    Tripote ton arc, garde, et le congédia. Aurais-tu deviné juste, s'il plaît à un homme, qui assiste à une remise de dette. Dénoncé bientôt, il se présenta chez lui, la table restait mise du matin au soir le plus heureux, auraient-ils été plus heureux la seconde fois que la première face du palais de l'évêque d'être humble. Mêlez à cela, vous vous rappelez peut-être son premier ressort. Allons-nous-en, ils sont civilisés. Ramasse-le, et ne riait jamais autant que nous avons un théâtre où, bien sûr : demain, s'ils prennent la peine de se battre. Fabriqués en urgence dans une imprimerie. 
+    </p>
+    <p>
+    Reconnaissant le droit au bonheur, à ce genre de peines. Suffisait-il pour cela de considérer une pile constituée de cubes empilés les uns sur les autres. Vois quel est ce moi ? Imagination, sans se faire une idée des choses, pour peu qu'en fait ils n'ont fait en moyenne la ligne la plus directe pour arriver à ce résultat. Maman m'a ordonné de faire sa vie... Approchez, monsieur, nous examinerons avec soin et en détail ; par une disposition intérieure qui nous permet de saisir l'occasion. Gargouille, lui dit-il en tâchant de ne pas redouter un long mémoire d'architecte et de tapissier. 
+    </p>
+      
+
+
+{% endblock %}
